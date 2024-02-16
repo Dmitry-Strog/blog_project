@@ -132,5 +132,3 @@ class TagPostList(DataMixin, ListView):
         return Women.published.filter(tags__slug=self.kwargs['tag_slug']).select_related('cat')
 
 
-class NameTag(DataMixin, ListView):
-    pass
